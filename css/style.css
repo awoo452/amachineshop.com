@@ -8,7 +8,6 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 body {
   margin: 0;
-  background-color: lightgray;
 }
 
 body .hidden {
@@ -21,7 +20,6 @@ body a {
 
 @media (min-width: 1000px) {
   body {
-    background-color: #191919;
     margin: auto;
     max-width: 85%;
   }
@@ -70,12 +68,10 @@ nav li {
 
 nav li a {
   font-size: .75em;
-  color: white;
   text-decoration: none;
 }
 
 nav li a:hover {
-  color: olivedrab;
   text-decoration: underline;
 }
 
@@ -105,7 +101,6 @@ main #about .container h1 {
   text-align: center;
   font-size: 1.5em;
   margin: 0;
-  color: white;
 }
 
 main #about .container ul {
@@ -125,7 +120,6 @@ main #about .container ul {
 main #about .container ul h2 {
   margin: .25em;
   font-size: .9em;
-  color: white;
 }
 
 @media (min-width: 1000px) {
@@ -138,7 +132,6 @@ main #about .container #aboutImg {
   display: flex;
   flex: 60%;
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding2.jpg'), 150%, center, no-repeat, parent, parent); */
-  background-color: black;
   background-position: center;
   background-size: 150%;
   background-repeat: no-repeat;
@@ -150,8 +143,6 @@ main #about .container button {
   margin: auto;
   margin-top: 1em;
   padding: 1em;
-  background-color: black;
-  color: white;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
 }
@@ -180,7 +171,6 @@ main #landing h1 {
   margin: 0;
   margin-bottom: .5em;
   font-size: 2em;
-  color: white;
 }
 
 main #landing .container {
@@ -196,7 +186,6 @@ main #landing .container {
 
 main #landing .container h2 {
   margin: 0;
-  color: white;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -210,7 +199,6 @@ main #landing .container ul {
 }
 
 main #landing .container .textBox {
-  background-color: black;
   border-right: 0;
   position: relative;
   padding: .5em;
@@ -218,7 +206,6 @@ main #landing .container .textBox {
 
 main #landing #container1 {
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding3.jpeg'), 100%, center, no-repeat, parent, parent); */
-  background-color: black;
 }
 
 main #landing #container1 ul {
@@ -242,7 +229,6 @@ main #landing #container1 #InfoContainer {
 
 main #landing #container2 {
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/tube1.jpg'), 100%, center, no-repeat, parent, parent); */
-  background-color: black;
 }
 
 main #landing #container2 ul {
@@ -266,7 +252,6 @@ main #landing #container2 #tubeBendingInfoContainer {
 
 main #landing #container3 {
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/jeep5.jpg'), 100%, center, no-repeat, parent, parent); */
-  background-color: black;
 }
 
 main #landing #container3 ul {
@@ -290,7 +275,6 @@ main #landing #container3 #fabricationInfoContainer {
 
 main #landing #container4 {
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sr5red2.jpeg'), 100%, center, no-repeat, parent, parent); */
-  background-color: black;
   margin-bottom: 0;
 }
 
@@ -326,7 +310,6 @@ main #projects {
 }
 
 main #projects h1 {
-  color: white;
   text-align: center;
   margin: 0;
   margin-bottom: .5em;
@@ -337,15 +320,12 @@ main #projects h1 {
 main #projects h2 {
   margin: 0;
   font-size: 1.25em;
-  color: white;
 }
 
 main #projects p {
   margin: 0;
-  color: white;
   width: 100%;
   text-align: center;
-  background-color: black;
   line-height: 1em;
 }
 
@@ -355,7 +335,6 @@ main #projects .projectContainer {
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: black;
 }
 
 @media screen and (max-width: 690px) {
@@ -368,7 +347,8 @@ main #projects .projectContainer .project .projectImage {
   border-bottom: 1px solid #c8c8c8;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  background-color: black;
+  background-size: 100%;
+  height: 300px;
 }
 
 main #projects .projectContainer .project #project1Image {
@@ -436,15 +416,10 @@ footer {
   background: url("/img/sheet1.jpg");
   background-size: 100%;
   background-position: center;
-  background-color: black;
 }
 
 footer #footerNavContainer {
   margin-bottom: 1em;
-}
-
-footer #footerNavContainer a:hover {
-  color: olivedrab;
 }
 
 footer #footerNavContainer .footerNavItem {

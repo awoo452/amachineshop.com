@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 body {
     margin: 0;
-    background-color: lightgray;
     .hidden {
         display: none;
     }
@@ -22,7 +21,6 @@ body {
 
 @media (min-width: 1000px) {
     body {
-        background-color: rgb(25, 25, 25);
         margin: auto;
         max-width: 85%;
     }
@@ -67,11 +65,9 @@ nav {
         
         a {
             font-size: .75em;
-            color: white;
             text-decoration: none;
         }
         a:hover {
-            color: olivedrab;
             text-decoration: underline;
         }
         li {
@@ -102,7 +98,6 @@ main {
                 text-align: center;
                 font-size: 1.5em;
                 margin: 0;
-                color: white;
             }
             ul {
                 display: flex;
@@ -119,7 +114,6 @@ main {
                 h2 {
                     margin: .25em;
                     font-size: .9em;
-                    color: white;
                 }
 
                 @media (min-width: 1000px) {
@@ -132,7 +126,6 @@ main {
                 display: flex;
                 flex: 60%;
                 /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding2.jpg'), 150%, center, no-repeat, parent, parent); */
-                background-color: black;
                 background-position: center;
                 background-size: 150%;
                 background-repeat: no-repeat;
@@ -144,8 +137,6 @@ main {
                 margin: auto;
                 margin-top: 1em;
                 padding: 1em;
-                background-color: black;
-                color: white;
                 border: 1px solid rgb(200,200, 200);
                 border-radius: 5px;
             }
@@ -172,7 +163,6 @@ main {
                 margin: 0;
                 margin-bottom: .5em;
                 font-size: 2em;
-                color: white;
             }
             .container {
                 height: 300px;
@@ -185,7 +175,6 @@ main {
                 border-bottom: 1px solid black;
                 h2 {
                     margin: 0;
-                    color: white;
                     margin-left: 1em;
                     margin-right: 1em;
                 }
@@ -197,7 +186,6 @@ main {
                     /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/grid.png'), 100%, center, no-repeat, 100%, parent); */
                 }
                 .textBox {
-                    background-color: black;
                     border-right: 0;
                     position: relative;
                     padding: .5em;
@@ -210,7 +198,6 @@ main {
 
             #container1 {
                 /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding3.jpeg'), 100%, center, no-repeat, parent, parent); */
-                background-color: black;
                 ul {
                     border-top-right-radius: 5px;
                 }
@@ -230,7 +217,6 @@ main {
             }
             #container2 {
                 /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/tube1.jpg'), 100%, center, no-repeat, parent, parent); */
-                background-color: black;
                 ul {
                     border-top-left-radius: 5px;
                 }
@@ -250,7 +236,6 @@ main {
             }
             #container3 {
                 /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/jeep5.jpg'), 100%, center, no-repeat, parent, parent); */
-                background-color: black;
                 ul {
                     border-top-right-radius: 5px;
                 }
@@ -270,7 +255,6 @@ main {
             }
             #container4 {
                 /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sr5red2.jpeg'), 100%, center, no-repeat, parent, parent); */
-                background-color: black;
                 margin-bottom: 0;
                 ul {
                     border-top-left-radius: 5px;
@@ -303,7 +287,6 @@ main {
     padding-bottom: 1em;
     border-bottom: 5px solid black;
         h1 {
-        color: white;
         text-align: center;
         margin: 0;
         margin-bottom: .5em;
@@ -313,14 +296,11 @@ main {
         h2 {
         margin: 0;
         font-size: 1.25em;
-        color: white;
         }
         p {
         margin: 0;
-        color: white;
         width: 100%;
         text-align: center;
-        background-color: black;
         line-height: 1em;
         }
         .projectContainer {
@@ -329,7 +309,6 @@ main {
         border: 1px solid rgb(200,200, 200);
         border-radius: 5px;
         box-sizing: border-box;
-        background-color: black;
         @media screen and (max-width: 690px) {
             width: 90%;
         }
@@ -338,7 +317,8 @@ main {
                     border-bottom: 1px solid rgb(200,200, 200);
                     border-top-right-radius: 5px;
                     border-top-left-radius: 5px;
-                    background-color: black;
+                    background-size: 100%;
+                    height: 300px;
                 }
                 #project1Image {
                     /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/jeep3.jpg'), 120%, center, no-repeat, 100%, 200px); */
@@ -399,15 +379,12 @@ footer {
     background: url('/img/sheet1.jpg');
     background-size: 100%;
     background-position: center;
-    background-color: black;
     
     #footerNavContainer {
         margin-bottom: 1em;
         a {
-
         }
         a:hover {
-            color: olivedrab;
         }
         .footerNavItem {
             margin-left: .75em;
@@ -425,7 +402,6 @@ footer {
     #footerSocialMediaContainer {
         margin-bottom: 1em;
         a {
-            
         }
         .footerSocialMediaItem {
             margin-left: .5em;
