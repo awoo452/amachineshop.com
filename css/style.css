@@ -6,8 +6,13 @@ h1, h2, h3, h4, h5, h6, p, a, i {
   text-rendering: optimizeLegibility;
 }
 
+a {
+  color: black;
+}
+
 body {
   margin: 0;
+  border: 1px solid black;
 }
 
 body .hidden {
@@ -35,7 +40,7 @@ nav {
   display: inline-block;
   height: 80px;
   width: 100%;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sheet1.jpg'), 100%, center, no-repeat, parent, parent);*/
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, no-repeat, parent, parent);*/
   border-bottom: 5px solid black;
 }
 
@@ -48,7 +53,7 @@ nav img {
 
 nav ul {
   float: right;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/grid.png'), 100%, center, repeat, parent, parent); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, repeat, parent, parent); */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -89,7 +94,7 @@ main #about .container {
   flex-wrap: wrap;
   justify-content: space-between;
   height: fit-content;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/rust1.jpg'), 100%, center, repeat, parent, parent); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, repeat, parent, parent); */
   padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: 5px solid black;
@@ -111,7 +116,7 @@ main #about .container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/grid.png'), 100%, center, repeat, parent, parent);*/
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, repeat, parent, parent);*/
   border: 1px solid black;
   border-left: 0;
   flex: 40%;
@@ -131,7 +136,12 @@ main #about .container ul h2 {
 main #about .container #aboutImg {
   display: flex;
   flex: 60%;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding2.jpg'), 150%, center, no-repeat, parent, parent); */
+  background: url("/img/aboutImg.png");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: parent;
+  height: parent;
   background-position: center;
   background-size: 150%;
   background-repeat: no-repeat;
@@ -143,7 +153,7 @@ main #about .container button {
   margin: auto;
   margin-top: 1em;
   padding: 1em;
-  border: 1px solid #c8c8c8;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -160,151 +170,14 @@ main #about .container button:hover {
   }
 }
 
-main #landing {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sheet2.jpg'), 100%, parent, parent, parent, parent); */
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-bottom: 5px solid black;
-}
-
-main #landing h1 {
-  margin: 0;
-  margin-bottom: .5em;
-  font-size: 2em;
-}
-
-main #landing .container {
-  height: 300px;
-  width: auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  margin-bottom: 1em;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-main #landing .container h2 {
-  margin: 0;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-main #landing .container ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/grid.png'), 100%, center, no-repeat, 100%, parent); */
-}
-
-main #landing .container .textBox {
-  border-right: 0;
-  position: relative;
-  padding: .5em;
-}
-
-main #landing #container1 {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/welding3.jpeg'), 100%, center, no-repeat, parent, parent); */
-}
-
-main #landing #container1 ul {
-  border-top-right-radius: 5px;
-}
-
-main #landing #container1 .textBox {
-  border-bottom-right-radius: 5px;
-}
-
-main #landing #container1 #InfoContainer {
-  float: left;
-  position: relative;
-  top: 180px;
-  width: min-content;
-  border: 1px solid #c8c8c8;
-  border-left: none;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-main #landing #container2 {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/tube1.jpg'), 100%, center, no-repeat, parent, parent); */
-}
-
-main #landing #container2 ul {
-  border-top-left-radius: 5px;
-}
-
-main #landing #container2 .textBox {
-  border-bottom-left-radius: 5px;
-}
-
-main #landing #container2 #tubeBendingInfoContainer {
-  position: relative;
-  float: right;
-  top: 210px;
-  width: fit-content;
-  border: 1px solid #c8c8c8;
-  border-right: none;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-main #landing #container3 {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/jeep5.jpg'), 100%, center, no-repeat, parent, parent); */
-}
-
-main #landing #container3 ul {
-  border-top-right-radius: 5px;
-}
-
-main #landing #container3 .textBox {
-  border-bottom-right-radius: 5px;
-}
-
-main #landing #container3 #fabricationInfoContainer {
-  float: left;
-  position: relative;
-  top: 195px;
-  width: min-content;
-  border: 1px solid #c8c8c8;
-  border-left: none;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-main #landing #container4 {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sr5red2.jpeg'), 100%, center, no-repeat, parent, parent); */
-  margin-bottom: 0;
-}
-
-main #landing #container4 ul {
-  border-top-left-radius: 5px;
-}
-
-main #landing #container4 .textBox {
-  border-bottom-left-radius: 5px;
-}
-
-main #landing #container4 #detailingInfoContainer {
-  position: relative;
-  float: right;
-  top: 210px;
-  width: fit-content;
-  border: 1px solid #c8c8c8;
-  border-right: none;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
 main #projects {
-  padding-top: 1em;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/rust2.jpg'), 100%, center, repeat, parent, parent); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/projectBackground.png'), 100%, center, repeat, parent, parent); */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-evenly;
+  padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: 5px solid black;
 }
@@ -332,7 +205,7 @@ main #projects p {
 main #projects .projectContainer {
   width: 40%;
   margin: 1em;
-  border: 1px solid #c8c8c8;
+  border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -344,7 +217,7 @@ main #projects .projectContainer {
 }
 
 main #projects .projectContainer .project .projectImage {
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid black;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   background-size: 100%;
@@ -352,7 +225,7 @@ main #projects .projectContainer .project .projectImage {
 }
 
 main #projects .projectContainer .project #project1Image {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/jeep3.jpg'), 120%, center, no-repeat, 100%, 200px); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/project1.png'), 120%, center, no-repeat, 100%, 200px); */
 }
 
 @media (min-width: 1000px) {
@@ -363,7 +236,7 @@ main #projects .projectContainer .project #project1Image {
 }
 
 main #projects .projectContainer .project #project2Image {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sr5red3.jpeg'), 120%, center, no-repeat, 100%, 200px); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/project2.png'), 120%, center, no-repeat, 100%, 200px); */
 }
 
 @media (min-width: 1000px) {
@@ -374,7 +247,7 @@ main #projects .projectContainer .project #project2Image {
 }
 
 main #projects .projectContainer .project #project3Image {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/the4runner.jpg'), 120%, center, no-repeat, 100%, 200px); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/project3.png'), 120%, center, no-repeat, 100%, 200px); */
 }
 
 @media (min-width: 1000px) {
@@ -385,7 +258,7 @@ main #projects .projectContainer .project #project3Image {
 }
 
 main #projects .projectContainer .project #project4Image {
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/trailer17.png'), 120%, center, no-repeat, 100%, 200px); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/project4.png'), 120%, center, no-repeat, 100%, 200px); */
 }
 
 @media (min-width: 1000px) {
@@ -398,7 +271,7 @@ main #projects .projectContainer .project #project4Image {
 main #projects .projectContainer .project .projectTitle {
   width: 100%;
   text-align: center;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/grid.png'), 100%, parent, no-repeat, parent, parent); */
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, parent, no-repeat, parent, parent); */
 }
 
 main #projects .projectContainer .project .projectText {
@@ -412,8 +285,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/sheet1.jpg'), 100%, center, parent, parent, parent); */
-  background: url("/img/sheet1.jpg");
+  /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, parent, parent, parent); */
+  /* ADD CUSTOM IMAGE HERE background: url('/img/.png'); */
   background-size: 100%;
   background-position: center;
 }
