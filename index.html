@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!--Page Title-->
+        <title>ONE OFF MACHINE SHOP</title>
+
+        <!--External CSS files-->
+        <link rel ="stylesheet" href="./css/style.css?v=1.1"> <!--My stylesheet-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--FontAwesome stylesheet-->
+
+        <!--Metadata-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Quality and Precision CAD, 3D Printing and Prototyping"> <!--Page description-->
+        <meta name="keywords" content="3D Printing, CAD, Computer Aided Design, CNC"> <!--Page keywords-->
+        <meta name="author" content="getawd.com"> <!--Page author-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is page sizing & display-->
+        <!--PUT IMAGE HERE--><meta property="og:image" content="img/.jpg"> <!--Put social media image link here-->
+        <meta property="og:image:type" content="image/jpg"> <!--What file type is displayed?-->
+        
+        <!--Links-->
+        <!--PUT IMAGE HERE--><link rel="icon" href="img/.png"> <!--Browser Tab Image-->
+        <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet" type="text/css">  <!--Font type Link-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet" type="text/css">  <!--Font type Link-->
+        <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet" type="text/css"> <!--Font type Link-->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet" type="text/css"> <!--Font type Link-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/> <!--Animate.css-->
+
+    </head>
+
+    <body>
+        <nav>
+            <!--Put Image Here--><img src="./img/logo.png">
+            <ul>
+                <li>
+                    <a href="#index">HOME</a>
+                </li>
+                <li>
+                    <a href="#landing">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#projects">PROJECTS</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="about">
+                <article class="container" id="aboutInfoContainer">
+                    <ul>
+                        <li>
+                            <h2>PRECISION</h2>
+                        </li>
+                        <li>
+                            <h2>AND</h2>
+                        </li>
+                        <li>
+                            <h2>QUALITY</h2>
+                        </li>
+                        <li>
+                            <h2>CAD</h2>
+                        </li>
+                        <li>
+                            <h2>3D PRINTING</h2>
+                        </li>
+                        <li>
+                            <h2>CNC</h2>
+                        </li>
+                        <li>
+                            <h2>SERVICES</h2>
+                        </li>
+                    </ul>
+                    
+                    <div id="aboutImg"></div>
+
+                </article>
+            </section>
+
+            <section id="projects">
+                <h1 id="projectsHeading">OUR PROJECTS</h1>
+                <article class="projectContainer">
+                    <a href="/project1/#" class="project">
+                        <div class="projectImage" id="project1Image"></div>
+                        <h2 class="projectTitle">PROJECT 1</h2>
+                        <p class="projectText">Coming Soon!</p>
+                    </a>
+                </article>
+                <article class="projectContainer">
+                    <a href="/project2#" class="project">
+                        <div class="projectImage" id="project2Image"></div>
+                        <h2 class="projectTitle">PROJECT 2</h2>
+                        <div class="projectText">
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="projectContainer">
+                    <a href="project3#" class="project">
+                        <div class="projectImage" id="project3Image"></div>
+                        <h2 class="projectTitle">PROJECT 3</h2>
+                        <div class="projectText">
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="projectContainer">
+                    <a href="project4#" class="project">
+                        <div class="projectImage" id="project4Image"></div>
+                        <h2 class="projectTitle">PROJECT 4</h2>
+                        <div class="projectText">
+                            <p>Coming Soon!</p>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            
+            <section class="hidden" id="contact">
+                <h1>CONTACT</h1>
+                <article id="formContainer">
+                    <form>
+                        <div class="formItem" id="name">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="formItem" id="number">
+                            <label for="number">Phone Number</label>
+                            <input type="text" name="number" id="number">
+                        </div>
+                        <div class="formItem" id="email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="formItem" id="inquiryType">
+                            <label for="type">Category</label>
+                            <select name="type" id="type">
+                                <option value="default">-</option>
+                                <option value="sales">Sales Question</option>
+                                <option value="order">Order Status</option>
+                                <option value="general">Information Request</option>
+                                <option value="project">Project Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="formItem" id="inquiry">
+                            <label for="inquiry">How can we help?</label>
+                            <textarea id="inquiry" name="inquiry" rows="3">Enter your message here!</textarea>
+                        </div>
+
+                        <button id="submit">SUBMIT!</button>
+                    </form>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            
+            <!--Navigation-->
+            <div id="footerNavContainer">
+                <a class="footerNavItem" href="#index">HOME</a>
+                <a class="footerNavItem" href="#landing">ABOUT</a>
+                <a class="footerNavItem" href="#projects">PROJECTS</a>
+                <a class="footerNavItem hidden" href="#contact">CONTACT</a>
+            </div>
+
+            <!--Contact Info-->
+            <div id="footerContactContainer">
+                <p><i class="fa fa-phone"></i> PHONE NUMBER</p>
+            </div>
+
+            <!--Social Media-->
+            <div id="footerSocialMediaContainer">
+                <a class="footerSocialMediaItem" href="https://www.instagram.com/cedric_one_off_machine/"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!--Copyright-->
+            <div id="footerCopyrightContainer">
+                <p>AW DEVELOPMENT <i class="far fa-copyright"></i> 2020</p>
+            </div>
+    
+        </footer>
+
+        <!--Scripts-->
+        <script src="app.js"></script> <!--My JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--jQuery-->
+    </body>
