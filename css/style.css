@@ -207,7 +207,7 @@ main #projects h1 {
   margin-bottom: .5em;
   font-size: 2em;
   flex: 100%;
-  color: white;
+  color: lightgrey;
 }
 
 main #projects h2 {
@@ -215,7 +215,7 @@ main #projects h2 {
   margin-bottom: .25em;
   font-size: 1.25em;
   text-align: center;
-  color: white;
+  color: lightgrey;
 }
 
 main #projects p {
@@ -223,7 +223,7 @@ main #projects p {
   width: 100%;
   text-align: center;
   line-height: 1em;
-  color: white;
+  color: lightgrey;
 }
 
 main #projects .projectContainer {
@@ -232,6 +232,7 @@ main #projects .projectContainer {
   border: 1px solid gray;
   border-radius: 5px;
   box-sizing: border-box;
+  background-color: black;
 }
 
 @media screen and (max-width: 690px) {
@@ -331,6 +332,7 @@ footer {
   align-items: center;
   /*ADD CUSTOM IMAGE HERE @include custom-image(url('/img/.png'), 100%, center, parent, parent, parent); */
   /* ADD CUSTOM IMAGE HERE background: url('/img/.png'); */
+  background-color: lightgrey;
   background-size: 100%;
   background-position: center;
 }
