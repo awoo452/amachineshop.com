@@ -56,7 +56,7 @@ nav img {
 nav ul {
   float: right;
   background: url("/img/grid.png");
-  background-size: 100%;
+  background-size: 10%;
   background-position: center;
   background-repeat: repeat;
   width: parent;
@@ -125,7 +125,7 @@ main #about .container ul {
   padding: 0;
   margin: 0;
   background: url("/img/grid.png");
-  background-size: 100%;
+  background-size: 7%;
   background-position: center;
   background-repeat: repeat;
   width: parent;
@@ -318,9 +318,9 @@ main #projects .projectContainer .project .projectText {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   background: url("/img/grid.png");
-  background-size: 100%;
-  background-position: parent;
-  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: center;
+  background-repeat: repeat;
   width: parent;
   height: parent;
 }
